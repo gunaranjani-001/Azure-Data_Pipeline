@@ -118,8 +118,8 @@ azure-data-engineering/
 ├── Bronze to Silver.ipynb       # Databricks notebook for Bronze to Silver transformations
 ├── Silver to Gold.ipynb         # Databricks notebook for Silver to Gold transformations
 ├── Create_Serverless_view.sql   # SQL script for Synapse Analytics
-├── SQL script 1.sql             # Additional SQL script
-├── SQL script 2.sql             # Additional SQL script
+├── Create_address_view.sql      # Additional SQL script
+├── Query_address_data.sql       # Additional SQL script
 ├── StorageMount.ipynb           # Databricks notebook for mounting Azure Data Lake
 ├── Screenshot 2024-12-01 204313.png # Project architecture diagram
 ├── README.md                    # Project documentation
