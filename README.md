@@ -23,7 +23,10 @@ This repository contains the implementation of an end-to-end data engineering pr
 
 ## Project Overview
 
-This project showcases a data pipeline implemented on Microsoft Azure. It takes data from an on-premises SQL Server database, processes it using Azure Data Factory (ADF), and stores it in Azure Data Lake Gen2. Data transformations are performed using Azure Databricks and are organized into three layers: Bronze, Silver, and Gold. Analytics are powered by Azure Synapse Analytics, and reporting is done with Power BI.
+This project demonstrates how to build an end-to-end data pipeline on Microsoft Azure.
+It ingests data from SQL Server, stores it in Azure Data Lake Gen2, transforms it with Azure Databricks, and organizes it into Bronze, Silver, and Gold layers.
+
+The processed data is then loaded into Azure Synapse Analytics for advanced queries, and insights are visualized through Power BI dashboards. Security and governance are implemented with Azure Active Directory and Azure Key Vault.
 
 ---
 
@@ -31,22 +34,33 @@ This project showcases a data pipeline implemented on Microsoft Azure. It takes 
 
 The data pipeline consists of the following key components:
 
-1. **Ingestion**: Data is ingested from an on-premises SQL Server database using Azure Data Factory.
-2. **Data Lake Storage**: Raw data is stored in Azure Data Lake Gen2 (Bronze layer).
-3. **Transformation**: Data transformations are performed using Azure Databricks, creating Silver and Gold layers.
-4. **Analytics**: Transformed data is loaded into Azure Synapse Analytics for further processing.
-5. **Reporting**: Insights are visualized using Power BI.
-6. **Security & Governance**: Secured with Azure Active Directory and Azure Key Vault.
+Ingestion → Load data from SQL Server into Azure Data Lake Gen2 via ADF.
+
+Storage → Raw data stored in Bronze Layer.
+
+Transformation → Databricks cleans and enriches data into Silver and Gold Layers.
+
+Analytics → Data prepared for querying in Synapse.
+
+Reporting → Visualized through Power BI dashboards.
+
+Security → Managed with Azure AD & Key Vault.
 
 ---
 
 ## Features
 
-- End-to-end data pipeline on Azure.
-- Layered architecture with Bronze, Silver, and Gold layers.
-- Scalable and secure data processing using Azure services.
-- Integration with Power BI for real-time reporting.
-- Emphasis on governance using Azure Active Directory and Azure Key Vault.
+End-to-end data pipeline using Azure services.
+
+Scalable storage and processing (ADLS Gen2 + Databricks).
+
+Bronze/Silver/Gold layered architecture.
+
+Analytics with Synapse serverless SQL views.
+
+Interactive reporting with Power BI.
+
+Enterprise-grade security with Azure AD & Key Vault.
 
 ---
 
@@ -54,12 +68,27 @@ The data pipeline consists of the following key components:
 
 Before running this project, ensure you have:
 
-- Access to Azure services: ADF, Azure Data Lake Gen2, Databricks, Synapse Analytics, and Power BI.
-- An active Azure subscription.
-- Python installed locally for Databricks scripting.
-- SQL Server installed locally or access to an on-premises SQL database.
+Azure Subscription
 
+Azure Data Factory
+
+Azure Data Lake Gen2
+
+Azure Databricks
+
+Azure Synapse Analytics
+
+Power BI
 ---
+
+
+## Note
+
+The project is designed for learning purposes and demonstrates cloud-based data engineering.
+
+You can extend it by adding logging, monitoring, or CI/CD automation.
+---
+
 
 ## Installation
 
